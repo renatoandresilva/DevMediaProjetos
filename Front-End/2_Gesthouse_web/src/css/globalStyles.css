@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">');
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  /* list-style: none; */
+  color: #3e3e3e;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Header */
+#top-container {
+  height: 70px;
+  width: 100%;
+  padding: 1.25rem 0rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10px;
+  background-color: #fdfdfd;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  font-size: medium;
+}
+
+.container a:not(nav a){
+  font-size: 20px;
+}
+
+div.container div, .container nav {
+  margin-inline: .625rem;
+}
+
+.container span {
+  color: rgb(81, 141, 230);
+  margin-left: .3125rem;
+}
+
+.container ul {
+  display: flex;
+  gap: 1.25rem;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+/* Main Top */
+.title, .route-title, .about-container {
+  width: auto;
+  margin-top: 2.5rem;
+}
+.title__container, .route-title-content, .about-contnt {
+  height: 100%;
+  text-align: center;
+  padding: 5px 0px 30px;
+  font-size: clamp(1rem, 100vw, 1.125rem);
+}
+
+.title__container h2, .route-title-content h2, .about-contnt h2 {
+  margin-bottom: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.title__container p, .route-title-content p, .about-contnt p {
+  line-height: 30px;
+}
+
+/* Rooms */
+.card-rooms { 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+
+  max-width: 1024px;
+  width: 100%;
+  margin: 20px auto 70px;
+  height: 199.375px;
+  text-transform: uppercase;
+  text-align: center;
+  list-style-type: none;
+  border-radius: 8px;
+}
+
+li.card-rooms-item {
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+}
+
+.card-rooms-item {
+  flex: 1;
+}
+
+.card-rooms-item h3 {
+  margin-block: 20px;
+}
+
+.card-rooms-item a {
+  border-radius: inherit;
+}
+
+.card-rooms-item img {
+ width: 100%;
+ height: 100%;
+ border-radius: 8px;
+}
+
+.room-descriptions {
+  max-width: 1024px;
+  width: 100%;
+  height: 200px;
+  margin: 2.5rem auto 0px;
+}
+
+.room-descriptions-title {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.room-descriptions-content {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  justify-content: space-between;
+  list-style-type: disc !important
+}
+
+.room-descriptions-content li {
+  flex-basis: 250px;
+}
+
+/* Footer */
+.container-footer {
+  width: 100%;
+  min-height: 130px;
+  /* margin-top: 6.25rem;  */
+  background-color: #099268;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.footer-content {
+  max-width: 64rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.footer-content div {
+  flex: 1 0 248.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 10px;
+}
+
+.container-footer div:not(.footer-content div:last-child):last-child {
+  text-align: center;
+  padding-block: 15px;
+} 
+
+.footer-content div a, .footer-content div:nth-child(3)  {
+  display: inline-flex;
+  gap: .625rem;
+
+}
+
+.container-footer div, .footer-content div h4, .footer-content div p {
+  color: #fff;
+}
+

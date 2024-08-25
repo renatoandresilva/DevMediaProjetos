@@ -1,0 +1,209 @@
+@import 'globalStyle.css';
+
+.banner {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.container-info {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 40px;
+
+ height: 100%;
+ max-width: 768px;
+ width: 100%;
+ margin-inline: auto;
+}
+
+.info-logo {
+  text-align: center;
+  font-size: 32px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px
+}
+
+.logo-img__container {
+ height: 200px;
+ width: 200px;
+ position: relative;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.logo-img__container::before {
+  content: '';
+  width: 107.5%;
+  height: 107.5%;
+  position: absolute;
+  background: var(--gradient);
+  border-radius: 100%;
+  z-index: -1;
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.title {
+  font-size: 74px;
+  text-shadow: 3px 6px 1px #000000;
+  position: relative;
+}
+
+
+.title h1::after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  width: 25px;
+  height: 25px;
+  background-image: url('../asserts/verificado.png');
+}
+
+.title h1::before {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 5px;
+  width: 55px;
+  height: 5px;
+  border-radius: 4px;
+  background: var(--gradient);
+}
+
+.info-links {
+  width: 100%;
+  height: auto;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-list li {
+  height: 36px;
+  background-color:var(--color-6);
+  border-radius: 50px;
+  transition: .7s;
+}
+
+.menu-list li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: 1s;
+  border-radius: inherit;
+  background-color: var(--color-5);
+
+}
+
+.menu-list a:hover {
+  background-color: #fff;
+  color: #000000;
+  border-radius: 50px;
+}
+
+
+.menu-list p::first-letter, span.upper  {
+  text-transform: uppercase;
+}
+
+.icon {
+  height: 70%;
+  position: absolute;
+  left: 10px;
+}
+
+.info-logo h1, .menu-list a {
+  font-family: var(--font-family_2);
+  color: #fff;
+}
+
+/* Statistics */
+.statistics {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  background-image: url('../asserts/imagem-de-fundo.jpg');
+  background-position:top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.statistics h2 {
+  font-size: 50px;
+  text-align: center;
+  color: var(--color-1);
+}
+
+.statistics table {
+  max-width: 768px;
+  width: 100%;
+  
+}
+
+thead {
+  background-color: var(--color-4);
+  color: var(--color-2);
+}
+
+table th, table td {
+  padding: 20px;
+}
+
+tbody tr:nth-of-type(odd) {
+  background-color: var(--color-2);
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: var(--color-4);
+  color: var(--color-2);
+}
+
+.table-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.table-icon {
+  width: 30px;
+  height: 30px;
+}

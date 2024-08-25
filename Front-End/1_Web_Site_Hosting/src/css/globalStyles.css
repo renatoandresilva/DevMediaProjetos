@@ -1,0 +1,101 @@
+:root {
+  --color-1: #fff;
+  --color-2: #f1f3f7;
+  --color-3: #f6f6f6;
+  --color-4: #a8a4a4;
+  --color-5: #233032;
+  --color-6: #2f86d6;
+  --color-7: rgba(47, 134, 214, 1);
+
+  --padding-0: 20px 0px;
+  --padding-1: 35px 0px;
+  --padding-3: 40px 0px;
+  --padding-4: 120px 0px;
+  --padding-5: 100px 0px;
+
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.dev-name {
+  text-align: center;
+  background-color: var(--color-2);
+  padding: var(--padding-0);
+  font-weight: 600;
+  font-size: 14px;
+  align-self: flex-end;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+}
+
+.highlight__1 {
+  color: var(--color-6);
+}
+
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-5);
+  background-color: var(--color-1);
+}
+
+/* Header of the pages */
+.top {
+  padding: var(--padding-1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 4px 4px #ccc;
+}
+
+.top-content {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  height: 70px;
+  
+}
+
+.logo {
+  height: 4.375rem;
+  width: 320px;
+  display: flex;
+}
+
+.logo-icon {
+  height: 100%;
+}
+
+.top-links {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  text-transform: uppercase;
+}
+
+
+a img {
+  margin-right: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+
+

@@ -1,0 +1,213 @@
+@import url('./globalStyles.css');
+
+/* Header and banner*/
+#top {
+  padding: var(--padding-1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-1);
+  box-shadow: 3px 3px 4px 4px #ccc;
+}
+
+.top-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+.logo {
+  display: flex;
+  gap: 10px;
+  height:70px;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.links a {
+  text-transform: uppercase;
+  color: var(--color-5);
+  font-weight: 600;
+}
+
+#banner {
+  background-color: var(--color-6);
+  padding: var(--padding-4);
+  margin-top: 70px;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  color: var(--color-1);
+}
+
+.banner-content__1 {
+  width: clamp(12.5rem, 100vw, 29.375rem);
+}
+
+.banner-content__1 h2 {
+  font-size: 1.75rem;
+  margin-block: 20px;
+}
+
+.banner-img {
+  width: 50%;
+}
+
+/* Main content */
+#first-ad {
+  padding: var(--padding-3);
+  background-color: var(--color-5);
+  color: var(--color-1);
+}
+
+.first-ad-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-ad-content div {
+  width: clamp(18.75rem, 100vw, 37.5rem);
+}
+
+.link-btn {
+  padding: 1.25rem 2.5rem;
+  background-color: var(--color-6);
+  color: var(--color-3);
+  text-transform: uppercase;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+}
+
+#info {
+  padding: var(--padding-5);
+}
+
+.info-content {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  column-gap: 30px;
+  row-gap: 60px;
+
+}
+
+.info-content h2 {
+  width: 770px;
+  line-height: 40px;
+  font-size: 28px;
+  text-align: center;
+}
+
+.info-content-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5%;
+}
+
+.info-content-list li {
+  width: 33%;
+  text-align: center;
+}
+
+.info-content-list li img {
+  width: 25%;
+}
+
+.info-content-list li h3 {
+  margin-block: 20px;
+}
+
+#plans {
+  background-color: var(--color-3);
+  padding: var(--padding-5);
+  text-align: center;
+}
+
+#plans h2 {
+  margin-bottom: 50px;
+  letter-spacing: 2.2px;
+}
+.plans-table {
+  background-color: var(--color-1);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 4px 4px 20px 15px var(--color-7);
+}
+
+th h3 {
+  margin-top: 15px;
+}
+
+th p {
+  width: 120px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: var(--color-4);
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--color-3);
+}
+
+.price-table-logo {
+  width: 30%;
+}
+
+tr, th {
+  text-align: center;
+}
+
+td {
+  padding: 15px 0;
+}
+
+#second-ad {
+  padding: var(--padding-3);
+  background-color: var(--color-6);
+  color: var(--color-3);
+}
+
+.ad-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ad-content h3 {
+  width: clamp(18.75rem, 100vw, 28.125rem);
+}
+.ad-content a {
+  background-color: var(--color-5);
+}
+
+#footer {
+  position: relative;
+  padding: var(--padding-5); 
+  font-size: 12px; 
+  font-weight: 600;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  
+}
+
+.logo + p, div.dev-name {
+  margin-top: 30px;
+}
+
+

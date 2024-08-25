@@ -1,0 +1,23 @@
+:root {
+  --color-1: #fff;
+  --color-2: #ffffffcc;
+  --color-3: #000000;
+  --color-4: #000000cc;
+  --color-5: #0200006e;
+  
+
+  --font-family_1: 'Montserrat', sans-serif;
+  --font-family_2: 'Ysabeau Infant', sans-serif;
+
+  --gradient: linear-gradient(90deg, #ffdf00, #009c3b );
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family_1);
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
